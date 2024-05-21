@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritika Priya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pritika Priya</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h2>About Me</h2>
+                <p>I'm Pritika Priya, a B.Tech student in Computer Science at Galgotias University. Proficient in Python and web development, I'm driven by a passion for coding and technology. With a keen interest in problem-solving and software development, I'm excited to embark on new challenges and contribute to the ever-evolving tech landscape.</p>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                <li>B.Tech in Computer Science and Engineering, Galgotias University in 2025</li>
+                <li>XII from Patliputra Central School in 2021</li>
+                <li>X from DAV Public School in 2019</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>Artificial Intelligence and Machine Learning(AIML)</li>
+                    <li>Web Development(HTML, CSS, JavaScript, NodeJS)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates">
+            <div class="container">
+                <h2>Certificates</h2>
+                <ol>
+                    <li>AIML</li>
+                    <li>Dextrix 4.0</li>
+                    <li>Smart India Hackathon(SIH)</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project" onclick="showProjectDetails('intrusion')">
+                    <img src="project1.jpg" alt="Intrusion Detection">
+                    <h3>Intrusion Detection using ML</h3>
+                </div>
+                <div class="project" onclick="showProjectDetails('farming')">
+                    <img src="project2.jpg" alt="Smart Farming">
+                    <h3>Smart Farming</h3>
+                </div>
+                <div class="project" onclick="showProjectDetails('amazon')">
+                    <img src="project3.jpg" alt="Amazon Clone">
+                    <h3>Amazon Clone Website</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><a ><img src="email-icon.png" alt="Email"> E-mail : pritikapriya172@gmail.com</a></p>
+                    <p><a ><img src="phone-icon.png" alt="Phone">Phone : 8252278310</a></p>
+                    <p></p><a href="https://github.com/Pritikapriya" target="_blank"><img src="github-icon.png" alt="GitHub"></a></p>
+                    <a href="https://leetcode.com/PritikaPriya/" target="_blank"><img src="leetcode-icon.png" alt="LeetCode"></a>
+                    <a href="https://www.linkedin.com/in/pritika-priya-113102228/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="https://www.geeksforgeeks.org/user/pritikapzexm/" target="_blank"><img src="gfg-icon.png" alt="GeeksforGeeks"></a>
+                </div>
+                <form id="contact-form">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pritika Priya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="project-details" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeProjectDetails()">&times;</span>
+            <div id="project-details-content"></div>
+        </div>
+    </div>
+</body>
+</html>
